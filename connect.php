@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "zeromile";
+$username = "xtionfuze";
 $password = "";
 $dbname = "c9";
 // Create connection
