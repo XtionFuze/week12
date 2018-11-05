@@ -1,6 +1,6 @@
 <?php
 // Get table records
-$sql = "SELECT * FROM content WHERE id=".$pageid;
+$sql = "SELECT * FROM content WHERE link='".$pageid."'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0){
     // output data of each row

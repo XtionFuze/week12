@@ -1,5 +1,15 @@
 <?php
 require_once("../connect.php");
+
+$uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    $thisPage = array_pop($uriSegments);
+    
+    if($thisPage==""){
+        $thisPage="home";
+    }
+
+$pageid = $thisPage;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +25,7 @@ require_once("../connect.php");
             </div>
         </div>
         <?php
-        $pageid = 1;
+        //$pageid = 1;
         include("../content.php");
         ?>
     </div>
