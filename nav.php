@@ -13,5 +13,5 @@ if ($result->num_rows > 0){
     echo "No results";
 }
 echo "</ul>";
-$conn->close();
+//$conn->close();
 ?>
